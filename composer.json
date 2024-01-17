@@ -1,0 +1,15 @@
+{
+    "name": "devexplorer/my-portfolio",
+    "autoload": {
+        "psr-4": {
+            "Devexplorer\\MyPortfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "devexplorer",
+            "email": "contact@devexplorer.fr"
+        }
+    ],
+    "require": {}
+}
