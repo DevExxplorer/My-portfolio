@@ -1,3 +1,4 @@
-body {
-    background-color:  #242424;
-}
+@import 'config/variables';
+@import 'config/settings';
+
+@import 'views/home/hero';

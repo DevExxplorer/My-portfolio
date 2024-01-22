@@ -1,0 +1,60 @@
+.home-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    min-height: 100vh;
+
+    .message {
+        span {
+            font-size:  3vw;
+            font-family: $main-font;
+            color: $primary-color;
+        }
+    }
+
+    & .row-1,
+    & .row-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 375px) {
+            flex-direction: row;
+        }
+    }
+    
+    & .line-1,
+    & .line-2 {
+        display:  flex;
+
+        & .bloc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                font-size:  7vw;
+                font-family: $main-font;
+                color: $primary-color;
+                transform:  translateY(-2000px);
+            }
+        }
+    }
+
+    & .line-1 {
+        @media (min-width: 375px) {
+            margin-right:  10px;
+        }
+    }
+
+    .line {
+        width: 0;
+        height: 5px;
+        margin-top: 50px;
+        background-color:  $primary-color;
+    }
+}

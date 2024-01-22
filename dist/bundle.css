@@ -1,6 +1,77 @@
 /*!**************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./public/css/app.scss ***!
   \**************************************************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #242424;
+  margin: 0;
+  background-color: #F0F0F0;
+  font-size: 1.8rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: max(1.5rem, min(6.73139vw - 0.0776699rem, 8rem));
+  padding-right: max(1.5rem, min(6.73139vw - 0.0776699rem, 8rem));
+}
+
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  min-height: 100vh;
+}
+.home-hero .message span {
+  font-size: 3vw;
+  font-family: "Lemon", serif;
+  color: #002349;
+}
+.home-hero .row-1, .home-hero .row-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 375px) {
+  .home-hero .row-1, .home-hero .row-2 {
+    flex-direction: row;
+  }
+}
+.home-hero .line-1, .home-hero .line-2 {
+  display: flex;
+}
+.home-hero .line-1 .bloc, .home-hero .line-2 .bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-hero .line-1 .bloc span, .home-hero .line-2 .bloc span {
+  font-size: 7vw;
+  font-family: "Lemon", serif;
+  color: #002349;
+  transform: translateY(-2000px);
+}
+@media (min-width: 375px) {
+  .home-hero .line-1 {
+    margin-right: 10px;
+  }
+}
+.home-hero .line {
+  width: 0;
+  height: 5px;
+  margin-top: 50px;
+  background-color: #002349;
 }
