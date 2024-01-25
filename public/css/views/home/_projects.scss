@@ -1,0 +1,63 @@
+.home-projects {
+    z-index: 999;
+
+    &__section1,
+    &__section2,
+    &__section3{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 600%;
+    }
+
+    .project {
+        width: 100vw;
+        height:100vh;
+
+        &__bloc {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 100%;
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+
+                h3 {
+                    font-size: 3rem;
+                    font-family: $main-font;
+                    text-transform: uppercase;
+                }
+
+                & .skills {
+                    ul {
+                        display: flex;
+                        gap: 20px;
+                        padding: 0;
+                        list-style-type: none;
+
+                        li {
+                            padding: 5px 25px;
+                            color: white;
+                            font-family: $main-font;
+                            background-color: $primary-color;
+                            box-shadow: 
+                                5px 5px 0px 0px #289FED, 
+                                10px 10px 0px 0px #5FB8FF; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .project3 {
+        display: flex;
+    }
+
+    .project4 {
+        display: flex;
+    }
+}

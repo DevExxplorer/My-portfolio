@@ -4,8 +4,11 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: relative;
+    z-index: 9999;
     width: 100%;
     min-height: 100vh;
+    background-color:  $secondary-color;
 
     .message {
         span {
