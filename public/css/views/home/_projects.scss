@@ -16,8 +16,7 @@
         &__bloc {
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
-            width: 100%;
+            gap: 50px;
             height: 100%;
 
             &__text {
@@ -53,11 +52,21 @@
         }
     }
 
-    .project3 {
+    .project3,
+    .project4 {
         display: flex;
     }
 
-    .project4 {
-        display: flex;
+    &__title {
+        position: fixed;
+        top: 0;
+        right: 5%;
+
+        span {
+            font-size: 7rem;
+            font-family: $main-font;
+            color:  grey;
+            opacity: 0.3;
+        }
     }
 }

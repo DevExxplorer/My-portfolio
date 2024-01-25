@@ -103,8 +103,7 @@ body {
 .home-projects .project__bloc {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
+  gap: 50px;
   height: 100%;
 }
 .home-projects .project__bloc__text {
@@ -130,9 +129,18 @@ body {
   background-color: #002349;
   box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF;
 }
-.home-projects .project3 {
-  display: flex;
-}
+.home-projects .project3,
 .home-projects .project4 {
   display: flex;
+}
+.home-projects__title {
+  position: fixed;
+  top: 0;
+  right: 5%;
+}
+.home-projects__title span {
+  font-size: 7rem;
+  font-family: "Lemon", serif;
+  color: grey;
+  opacity: 0.3;
 }
